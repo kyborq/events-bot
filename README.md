@@ -8,20 +8,26 @@ pip install -r requirements.txt
 
 ## Project structure
 
+```
 project_name/
 ├── bot/
-│ ├── init.py
+│ ├── __init__.py
 │ ├── bot.py
-│ ├── commands.py
+│ ├── command.py
+│ ├── menu.py
 │ ├── utils.py
-│ └── handlers/
-│ ├── init.py
-│ └── start.py
+│ ├── handlers/
+│ │   ├── __init__.py
+│ │   └── start.py
+│ └── menus/
+│     ├── __init__.py
+│     └── main.py
 ├── config/
-│ ├── init.py
+│ ├── __init__.py
 │ ├── config.py
 │ └── secrets.py
 ├── .env
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
