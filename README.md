@@ -2,11 +2,45 @@
 
 ## Installing
 
+### 1. Virtual Environment
+
 ```
-pip install -r requirements.txt
+PS> python -m venv venv
 ```
 
-## Project structure
+And activate it...
+
+```
+PS> venv\Scripts\activate
+(venv) PS>
+```
+
+### 2. Install Packages
+
+```
+(venv) PS> python -m pip install python-dotenv sqlalchemy pytelegrambotapi
+```
+
+Or just...
+
+```
+(venv) PS> pip install -r requirements.txt
+```
+
+List pip packages
+
+```
+(venv) PS> python -m pip list
+```
+
+### 3. Close VEnv
+
+```
+(venv) PS> deactivate
+PS>
+```
+
+<!-- ## Project structure
 
 ```
 project_name/
@@ -30,4 +64,4 @@ project_name/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-```
+``` -->
