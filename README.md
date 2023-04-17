@@ -6,6 +6,10 @@ MeetupBot makes it easy to manage and attend events, and it provides a simple in
 
 ## Setup Environment
 
+### 0. Rename .env.dev to .env
+
+All parameters for telegram bot token and database connection string is stored in .env file
+
 ### 1. Start Python virtual environment
 
 ```
