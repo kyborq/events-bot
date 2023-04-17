@@ -23,10 +23,15 @@ class UserService:
 
         return existed_user
 
-    def get_user(self, first_name: str, last_name: str) -> User:
+    # def get_user(self, first_name: str, last_name: str) -> User:
+    #     return self.db.query(User).filter(
+    #         User.first_name == first_name and
+    #         User.last_name == last_name
+    #     ).first()
+
+    def get_user_by_chat_id(self, chat_id: int) -> User:
         return self.db.query(User).filter(
-            User.first_name == first_name and
-            User.last_name == last_name
+            User.chat_id == chat_id
         ).first()
 
     def delete_user(self, user_id: int) -> bool:
